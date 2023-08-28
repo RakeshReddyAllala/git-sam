@@ -1,0 +1,21 @@
+name: sample workflow-2
+
+ on:
+ push:
+   branches: [main]
+  pull-request:
+   branches: [main]
+  workflow-dispatch:
+
+jobs:
+  build:
+     runs-on: ubuntu-latest
+
+
+     steps:
+
+     - name: run a one line script
+        run: echo hello world!
+
+     - name: run a multi line script
+        run: echo good morning and good evening
