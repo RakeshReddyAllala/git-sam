@@ -1,6 +1,5 @@
 name: sample workflow-2
-
- on:
+on: workflow
  push:
    branches: [main]
   pull-request:
